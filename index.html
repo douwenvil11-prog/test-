@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSolar | Economize na conta de luz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+
+        body { background-color: #fff; color: #333; }
+
+        /* MENU NO TOPO (Transparente por cima da foto) */
+        header {
+            position: absolute; /* Fica por cima da foto */
+            top: 0;
+            width: 100%;
+            padding: 25px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo { font-size: 24px; font-weight: 800; color: #fff; letter-spacing: 1px; }
+        .logo span { color: #FFD700; } /* Dourado */
+
+        nav { display: flex; align-items: center; gap: 25px; }
+        nav a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: #FFD700; }
+
+        .btn-orcamento-topo {
+            background-color: #fff;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .btn-orcamento-topo:hover { background-color: #FFD700; }
+
+        /* HERO SECTION (A FOTO GIGANTE) */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            /* Imagem de fundo de casa com placa solar */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            font-weight: 800;
+            line-height: 1.1;
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span { color: #FFD700; } /* Destaque Dourado na palavra 90% */
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 40px;
+            color: #eee;
+        }
+
+        .btn-principal {
+            background-color: #FFD700;
+            color: #1a1a1a;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 16px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .btn-principal:hover { transform: scale(1.05); background-color: #e6c200; }
+
+        /* SEÇÃO DE CONTEÚDO */
+        .section { padding: 100px 10%; text-align: center; background: #F9F9F9; }
+        .section h2 { font-size: 36px; margin-bottom: 20px; color: #1a1a1a; }
+        .section p { color: #666; font-size: 16px; max-width: 800px; margin: 0 auto 40px auto; }
+
+        /* RESPONSIVIDADE (Para o celular não quebrar) */
+        @media (max-width: 768px) {
+            nav { display: none; } /* Esconde o menu no celular */
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ECO<span>SOLAR</span></div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Soluções</a>
+            <a href="#">Projetos</a>
+            <a href="#" class="btn-orcamento-topo">Solicitar Orçamento</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Economize até <span>90%</span><br>na sua conta de energia</h1>
+        <p>Energia limpa, instalação especializada e economia para todos os dias.</p>
+        <a href="https://wa.me/5500000000000" class="btn-principal" target="_blank">Solicitar Orçamento</a>
+    </section>
+
+    <section class="section">
+        <h2>Como funciona?</h2>
+        <p>Nossa equipe faz o projeto sob medida para a sua casa ou empresa. Você gera sua própria energia durante o dia e reduz o consumo à noite. Economia garantida a partir do primeiro mês.</p>
+        <a href="https://wa.me/5500000000000" class="btn-principal" target="_blank">Falar com um Especialista</a>
+    </section>
+
+</body>
+</html>
